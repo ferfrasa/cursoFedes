@@ -18,5 +18,7 @@ table, tr, td{
 }
 [edad="25"]{
     background-color: black;
-    color: white;
+    color: brown;
+    padding: 15px;
+    margin: 15px;
 }
