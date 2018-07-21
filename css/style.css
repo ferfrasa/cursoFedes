@@ -1,0 +1,162 @@
+*{
+  /* border: solid 1px;*/
+}
+/*estilo general body*/
+body{
+   background-color:#f2f2f2;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   color: #43525A;
+}
+/*estilo para todos los encabezados*/
+h1{
+   font-size: 42px;
+   font-weight: 500;
+}
+/*estilo para todos los p*/
+p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*Para el menu */
+nav{
+    padding-left: 0px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*estilo para cuadrar imagen del menu */
+nav .izquierda + img{
+    width: 200px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    
+    /*padding-left: 1%;
+    padding-right: 1%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+nav >ul>li:hover{
+
+    color: #28A5BE;
+}
+/*Utilizando atributos*/
+[nombre="configure"]{
+    font-weight: bolder;
+    border-bottom: solid 2px #28A5BE ;
+    padding-bottom: 5px;
+}
+[nombre="configure"]:hover{
+    color: #28A5BE;
+}
+
+/*Poner la lista de formar horizontal*/
+nav >ul li{
+   display:inline-block;
+   list-style: none;
+   padding: 15px;
+}
+/*estilo de imagen que es hijo directo de li*/
+nav >ul li>img{
+     list-style: none;
+     display:inline-block;
+     width: 16px;
+     height: 16px;
+  }
+/* Para la linea vertical y puntos del menu*/
+ nav >ul li>span{
+     padding-left: 10px;
+     padding-right: 10px;
+     font-weight: bolder;
+ }
+/*Menu izquierda*/
+.izquierda{
+   float: left;
+   padding-right: 8%;
+}
+/*Menu derecha*/
+.derecha{
+   float: right;
+   padding-left: 7.5%;
+}
+/*poner los botones horizontalmente y enla mitad*/
+.boton .botones{
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+    box-shadow: 0 8px 6px -6px black;
+}
+/*Estilo para el boton azul*/
+#btBlue{
+    background-color:#28A5BE;
+    width: 189px;
+    height: 66px;
+}
+/*Estilo para el boton blanco*/
+#btBlack{
+    background-color:#2D2D2D;
+    width: 132px;
+    height: 44px;
+    
+}
+/*Estilo para el texto de los botones*/    
+.boton p{
+
+   color: white;
+   font-size: 18px;
+   text-align: center;
+   font-weight: 400;
+}
+/*texto p para el boton negro*/
+.boton #btBlack>p{
+    margin-top: 8px;
+}
+[boton="importante"]:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1) 
+    
+}
+[boton="sencillo"]:hover{
+    width: 300px;
+    
+    -moz-transition: scale(1.1 0 0 3);
+    -webkit-transition:  all 1s !important;
+    -o-transition: scale(1.1 0 0 3);
+    -ms-transition: scale(1.1 0 0 3);
+    transition: all 1s !important;
+
+}
+/*estilo para el article slider*/
+.slider{
+    background-color: #ededeb;
+    padding-left: 50px;
+    padding-top: 35px;
+    position: static;
+    display: inline-block;
+}
+/*estilo para el primer hijo section alineado a la izquierda*/
+.slider>section{
+   float: left;
+   padding-right: 50px;
+}
+/*Estilo de la imagen del slider*/
+.sliderImg{
+     background-image: url(../img/front.png);
+     background-size: cover; 
+     width: 723px;
+     height: 690px;
+     display: inline-block;
+     padding-left: 120px;
+
+}
+
+

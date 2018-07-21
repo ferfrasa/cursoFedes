@@ -1,0 +1,22 @@
+table, tr, td{
+    border:  1px;
+}
+[operador="claro"]{
+
+    color: red;
+}
+[operador="tigo"]{
+    color: blue;
+}
+[operador="movistar"]{
+    color: green;
+}
+
+[nombre~="Juan"]{
+    background-color:red;
+    
+}
+[edad="25"]{
+    background-color: black;
+    color: white;
+}
